@@ -1,0 +1,24 @@
+{
+  "name": "birds-guard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Figma plugin that checks designs against approved BirDS library profiles",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs --preview",
+    "watch": "node build.mjs --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@create-figma-plugin/ui": "^4.0.3",
+    "preact": "^10.24.0"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.100.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

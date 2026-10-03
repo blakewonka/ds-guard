@@ -1,0 +1,21 @@
+{
+  "name": "BirDS Guard",
+  "id": "birds-guard-dev",
+  "api": "1.0.0",
+  "main": "dist/code.js",
+  "ui": "dist/ui.html",
+  "editorType": ["figma", "dev"],
+  "capabilities": ["inspect"],
+  "documentAccess": "dynamic-page",
+  "networkAccess": {
+    "allowedDomains": ["https://api.figma.com"],
+    "reasoning": "Lists the libraries published in a Figma project and reads their component keys through the Figma REST API."
+  },
+  "menu": [
+    { "name": "Check compliance", "command": "check" },
+    { "name": "Choose libraries", "command": "libraries" }
+  ],
+  "relaunchButtons": [
+    { "command": "check", "name": "Check BirDS compliance" }
+  ]
+}
